@@ -21,14 +21,24 @@
             android:text="@string/press_to_be_the_best"
             android:layout_width="334dp"
             android:layout_height="50dp" android:id="@+id/button" tools:layout_editor_absoluteY="656dp"
+            android:textSize="24sp"
+            android:background="#592B3A"
             tools:layout_editor_absoluteX="38dp"
             tools:ignore="MissingConstraints"/>
+
     <TextView
             android:text="@string/input_text"
+            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView" tools:layout_editor_absoluteY="29dp"
             tools:layout_editor_absoluteX="38dp"
             tools:ignore="MissingConstraints"/>
+
+    <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/toggleButton"/>
+
     <RadioGroup
             android:layout_width="218dp"
             android:layout_height="88dp" tools:layout_editor_absoluteY="157dp"
@@ -57,6 +67,6 @@
 
 
     <CalendarView android:layout_width="match_parent" android:layout_height="match_parent" />
-    <ToggleButton android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/toggle" />
+
 
 </LinearLayout>
