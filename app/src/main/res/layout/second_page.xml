@@ -1,75 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
     <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView5" tools:layout_editor_absoluteY="377dp"
-            tools:layout_editor_absoluteX="1dp"/>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView4" tools:layout_editor_absoluteY="251dp"
-            tools:layout_editor_absoluteX="2dp"/>
+            android:text="TextVie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteX="2dp"
-            tools:layout_editor_absoluteY="146dp">
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="hint"/>
-    </com.google.android.material.textfield.TextInputLayout>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView3" tools:layout_editor_absoluteY="120dp"
-            tools:layout_editor_absoluteX="2dp"/>
-    <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="278dp">
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:ems="10"
-                android:id="@+id/editTextPhone" android:layout_weight="1"/>
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="396dp">
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/editTextNumber" android:layout_weight="1"/>
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="507dp">
+                android:layout_height="match_parent"
+                android:hint="Enter your name" />
 
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/editTextTextPassword" android:layout_weight="1"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="626dp">
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
-                android:id="@+id/editTextTextEmailAddress" android:layout_weight="1"/>
-    </com.google.android.material.textfield.TextInputLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>
